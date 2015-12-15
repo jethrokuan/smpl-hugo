@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jethro Kuan</title>
+    {{partial "header.html" . }}
+  </head>
+  <body>
+    <div class="container">
+      {{ partial "navdiv.html" . }}
+      <section id="articles">
+	{{ range first 10 .Data.Pages }}
+	<span id="date"> {{.Date.Format "Mon, Jan 2, 2006"}} </span>
+	  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        {{ end }}
+      </section>
+    </div>
+</body>
+</html>
