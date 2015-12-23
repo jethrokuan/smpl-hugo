@@ -8,11 +8,13 @@
     <div class="container">
       {{ partial "navdiv.html" . }}
       <section id="articles">
-	{{ range first 10 .Data.Pages }}
-	<span id="date"> {{.Date.Format "Mon, Jan 2, 2006"}} </span>
-	  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-        {{ end }}
+	  {{ range first 10 .Data.Pages }}
+	  <section id="article" class="item">
+	      <span id="date"> {{.Date.Format "Mon, Jan 2, 2006"}} </span>
+	      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>    
+	  </section>
+          {{ end }}
       </section>
     </div>
-</body>
+  </body>
 </html>

@@ -430,8 +430,10 @@ th {
 html { font-size: 62.5%; }
 
 h1, h2, h3, h4, h5 {
+    margin-top: 5px;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
+    line-height: 7rem;
 }
 
 body {
@@ -478,4 +480,14 @@ section, article {
     margin-right: 0.2rem;
     background: #F4F6B2 none repeat scroll 0% 0%;
     border: medium none;
+}
+
+.item {
+    margin-bottom: 1rem;
+}
+
+code {
+    color: red;
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
 }
