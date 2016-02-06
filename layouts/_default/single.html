@@ -8,10 +8,13 @@
     <div class="container">
       {{partial "navdiv.html" . }}
       <article>
-	<h1 id="title"> {{.Title }}</h1>
-	<span id="date"> {{.Date.Format "Mon, Jan 2, 2006"}}</span><br/>
-	<span id="readingtime"> {{.ReadingTime}} minutes to read</span>
-	{{ .Content }}
+	  <h1 id="title"> {{.Title }}</h1>
+	  <div id="meta">
+	      <span> {{.Date.Format "Mon, Jan 2, 2006"}}</span><br/>
+	      <span> {{.ReadingTime}} minutes to read</span> 
+	  </div>
+	  <hr/>
+	  {{ .Content }}
       </article>    
     </div>
   </body>

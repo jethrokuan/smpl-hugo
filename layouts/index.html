@@ -5,16 +5,18 @@
     {{partial "header.html" . }}
   </head>
   <body>
-    <div class="container">
       {{ partial "navdiv.html" . }}
       <section id="articles">
 	  {{ range first 10 .Data.Pages }}
-	  <section id="article" class="item">
+	  <section id="article">
 	      <span id="date"> {{.Date.Format "Mon, Jan 2, 2006"}} </span>
-	      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>    
+	      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	      <p id="summary">{{ .Summary }}
+		  {{ if .Truncated}}
+		  <a class="read-more" href="{{ .RelPermalink }}">Read More</a>
+		  {{end}}</p>
 	  </section>
-          {{ end }}
+	  {{ end }}
       </section>
-    </div>
   </body>
 </html>
