@@ -193,7 +193,8 @@ section, article {
   margin-bottom: 3em; }
 
 #navdiv {
-  padding: 10px 0; }
+  padding: 10px 0;
+  float: left; }
   @media screen and (min-width: 600px) {
     #navdiv {
       float: right; } }

@@ -16,6 +16,8 @@ section, article {
 
 #navdiv {
     padding: 10px 0;
+    float: left;
+    
     @include media($medium-screen) {
 	float:right;
     }    
