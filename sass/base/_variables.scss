@@ -1,8 +1,7 @@
 // Typography
 $serif: 'Lusitana', serif;
 $serif-2: 'Merriweather', serif;
-$sans-serif: 'Merriweather Sans', sans-serif;
-$base-font-family: $sans-serif;
+$base-font-family: $serif-2;
 $heading-font-family: $serif;
 
 // Font Sizes
@@ -21,14 +20,14 @@ $base-z-index: 0;
 // Colors
 $grey: #343838;
 $white: #FFF;
-$orange: #FF6600;
+$orange: #F02311;
 
 // Font Colors
-$base-font-color: $white;
+$base-font-color: $grey;
 $action-color: $orange;
 
 // Border
-$base-border-color: $white;
+$base-border-color: $grey;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
