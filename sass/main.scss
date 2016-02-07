@@ -11,7 +11,11 @@ section, article {
 }
 
 #me {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    @include media($medium-screen) {
+	margin-bottom: 3em;
+    }
 }
 
 #navdiv {
@@ -37,6 +41,12 @@ section, article {
     }
 }
 
+#summary {
+    display: none;
+    @include media($medium-screen) {
+	display: inline;
+    }
+}
 
 hr {
     border-bottom: 1px solid $white;
