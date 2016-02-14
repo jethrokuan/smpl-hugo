@@ -245,6 +245,7 @@ h2 {
   font-style: italic;
   font-weight: 700;
   line-height: 1.0em;
+  margin-top: 2em;
   margin-bottom: 0.9em; }
   @media screen and (min-width: 600px) {
     h2 {
