@@ -9,23 +9,41 @@ section, article {
 #me {
     margin-bottom: 1em;
     margin-top: 1em;
+    text-align: center;
+
     @include media($medium-screen) {
-	margin-bottom: 3em;
+	      margin-bottom: 3em;
+        text-align: left;
     }
 }
 
 #navdiv {
-    padding: 10px 0;
+    padding: 0 0 10px 0;
     float: left;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+
+    span {
+        color: #333;
+        padding: 0 8px;
+    }
     
     @include media($medium-screen) {
-	float:right;
-    }    
+        float:right;
+        text-align: left;
+        width: inherit;
+    }
 }
 
 a.marked {
     padding: 0 5px;
     font-size: 2em;
+    display: block;
+
+    @include media($medium-screen) {
+        display: inline;
+    }
 }
 
 
